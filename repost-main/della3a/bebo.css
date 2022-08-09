@@ -1,0 +1,57 @@
+
+ body{
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+   height: 100vh;
+}
+ *{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ .slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+ }
+ .images {
+    display: flex;
+    width: 100%;
+ }
+.images img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.15 ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid rgb(240, 8, 8) 3px ;
+    cursor: pointer;
+    transition: all 0.15s ease ;
+margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .img1 {
+            margin-left: 0;}
+#img2:checked ~ .img2 {
+            margin-left: -100%;} 
+#img3:checked ~ .img3 {
+            margin-left: -200%;}
+#img4:checked ~ .img4 {
+            margin-left: -300%;} 
+.suiii{
+color: aqua;
+background-color: rgb(43, 43, 46);
+width:175vh;
+}
